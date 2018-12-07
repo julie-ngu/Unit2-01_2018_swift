@@ -6,9 +6,10 @@
 class MrCoxallStack {
     private final var stackArray: [Int] = []
     
-    func push(value: Int) {
+    func push(value: Int) -> String {
         stackArray.append(value)
-        print("\(value) was added.")
+        let update = "Value was added."
+        return update
     }
 }
 
