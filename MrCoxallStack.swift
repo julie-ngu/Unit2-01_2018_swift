@@ -2,13 +2,13 @@
 // Created on: Sept 2018
 // Created for: ICS4U
 // MrCoxallStack program stack file
-
 class MrCoxallStack {
     private final var stackArray: [Int] = []
-    
+    private var update: String = ""
+
     func push(value: Int) -> String {
         stackArray.append(value)
-        let update = "Value was added."
+        update = "Value was added."
         return update
     }
 }
@@ -16,4 +16,4 @@ class MrCoxallStack {
 var userStack = MrCoxallStack()
 var userNum = askForNumber()
 
-userStack.push(value: userNum)
+print(userStack.push(value: userNum))
